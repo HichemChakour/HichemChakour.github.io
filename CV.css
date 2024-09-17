@@ -1,0 +1,423 @@
+.page {
+    width: 100vw;  
+    height: 911px; 
+}
+.page2_3 {
+    width: 100vw;  
+    height: 455px; 
+}
+.resultat {
+    width:80px;
+    text-shadow:1px 1px 0 #444;
+    color: #297e21;
+    white-space: pre; /* Pour préserver les sauts de ligne */
+    font-family: monospace; /* Pour une meilleure lisibilité */
+}
+
+
+
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; /* Espacement entre les colonnes */
+}
+
+#apropos {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+}
+
+#photo {
+    width: 330px;
+    height: 400px;
+    position: absolute;
+    top:50%;
+    right: 300px;
+    transform: translateY(-50%);
+}
+.icompetence {
+    opacity: 0;
+    width: 100px;
+    height: 100px;
+    transform: scale(0.75); /* Taille initiale réduite à 75% */
+    transition: opacity 2s , transform 2s ;
+    
+}
+
+#html {
+    position: absolute;
+    top:35%;
+    Left: 20%;
+    
+}
+
+#css {
+    position: absolute;
+    top:35%;
+    Left: 50%;
+    
+}
+
+#js {
+    position: absolute;
+    top:35%;
+    Left: 80%;
+    
+}
+
+#php {
+    position: absolute;
+    top:70%;
+    Left: 20%;
+    
+}
+
+#sql {
+    position: absolute;
+    top:70%;
+    Left: 50%;
+    
+}
+
+#java {
+    position: absolute;
+    top:70%;
+    Left: 80%;
+    
+}
+
+.image-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+
+.hover-text {
+    width: 180px;
+    height: 130px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.image-container:hover .hover-text {
+    opacity: 1;
+}
+
+.formations{
+    width: 300px;
+    height: 200px;
+    color: black;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px;
+    border-radius: 5px;
+    transition: opacity 0.5s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.formationss{
+    width: 300px;
+    height: 200px;
+    color: black;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#master{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+#licence{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+#bac{
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+#morpion{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#wordle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#covoiturage{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#francais{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#anglais{
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+#arabe{
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+.navbar a {
+    padding: 14px 20px;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+.navbar a.active {
+    color: #4CAF50;
+    
+}
+
+.chat-icon {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    width: 60px;
+    height: 60px;
+    background-color: #007bff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.chat-icon:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1700px) {
+
+    #apropos {
+        width: 300px 
+    }
+}
+ @media (max-width: 1300px) {
+    #propos {
+          
+        height: 911px; 
+        
+    }
+
+    #photo {
+        flex: 1 1 100%;
+        margin: 5px 0;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%,-120%);
+    }
+    
+    #apropos {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .resultat {
+        width:60px;
+    }
+
+    #competence{
+        height: 911px; 
+    }
+
+    #html {
+        position: absolute;
+        top:20%;
+        Left: 20%;
+        
+    }
+    
+    #css {
+        position: absolute;
+        top:20%;
+        left: 70%;
+        transform: translateX(-70%);
+        
+    }
+    
+    #js {
+        position: absolute;
+        top:50%;
+        left: 20%;
+        
+    }
+    
+    #php {
+        position: absolute;
+        top:50%;
+        left: 70%;
+        transform: translateX(-70%);
+        
+    }
+    
+    #sql {
+        position: absolute;
+        top:80%;
+        Left: 20%;
+        
+    }
+    
+    #java {
+        position: absolute;
+        top:80%;
+        left: 70%;
+        transform: translateX(-70%);
+        
+    }
+    
+    .image-container {
+        
+        width: 100px;
+        height: 100px;
+    }
+
+    
+
+    .formations{
+        opacity: 0;
+        display: none;
+    }
+
+    .formation-container:hover .formationss {
+        opacity: 1;
+    }
+    .formation-container:hover .circle {
+        opacity: 0;
+    }
+
+    #langue{
+        height: 911px; 
+    }
+
+    #francais{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #anglais{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #arabe{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #loisire{
+        height: 911px; 
+    }
+
+    
+}
+
+@media (max-width: 500px) {
+
+    .chat-icon {
+        display: none;
+    }
+    
+    .navbar {
+        display: none;
+    }
+    .resultat {
+        width:40px;
+        display : none;
+    }
+    #resultat1 {
+        display : block;
+        width:60px;
+    }
+    #resultat2 {
+        display : block;
+        width:60px;
+    }
+    #resultat3 {
+        display : block;
+        width:60px;
+    }
+    #resultat4 {
+        display : block;
+        width:60px;
+    }
+    #resultat5 {
+        display : block;
+        width:60px;
+    }
+    #resultat6 {
+        display : block;
+        width:60px;
+    }
+}
