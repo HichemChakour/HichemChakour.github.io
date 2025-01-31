@@ -100,7 +100,7 @@ const CommentForm = memo(({ onSubmit, isSubmitting, error }) => {
                     ref={textareaRef}
                     value={newComment}
                     onChange={handleTextareaChange}
-                    placeholder="Écrivez votrémessage ici..."
+                    placeholder="Écrivez votre message ici..."
                     className="w-full p-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all resize-none min-h-[120px]"
                     required
                 />
