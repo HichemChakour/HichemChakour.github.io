@@ -9,6 +9,7 @@ const Navbar = () => {
     const navItems = [
         { href: "#Home", label: "Accueil" },
         { href: "#About", label: "À propos" },
+        { href: "#Parkour", label: "Parcours" },
         { href: "#Portofolio", label: "Portofolio" },
         { href: "#Contact", label: "Contact" },
     ];

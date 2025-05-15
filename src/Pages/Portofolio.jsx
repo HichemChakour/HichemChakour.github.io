@@ -112,7 +112,7 @@ const techStacks = [
   { icon: "java.svg", language: "Java" },
   { icon: "C++.svg", language: "C++" },
   { icon: "sql.svg", language: "SQL" },
-  { icon: "git.svg", language: "Git" },
+  { icon: "rust.svg", language: "Rust" },
 
 
 ];

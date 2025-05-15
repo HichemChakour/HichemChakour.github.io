@@ -10,6 +10,8 @@ import ContactPage from "./Pages/Contact";
 import ProjectDetails from "./components/ProjectDetail";
 import WelcomeScreen from "./Pages/WelcomeScreen";
 import { AnimatePresence } from 'framer-motion';
+import ParkourPage from "./Pages/Parkour.jsx";
+import Parkour from "./Pages/Parkour.jsx";
 
 const LandingPage = ({ showWelcome, setShowWelcome }) => {
   return (
@@ -26,6 +28,7 @@ const LandingPage = ({ showWelcome, setShowWelcome }) => {
           <AnimatedBackground />
           <Home />
           <About />
+            <Parkour/>
           <Portofolio />
             <ContactPage />
           <footer>
