@@ -22,20 +22,20 @@ const ToggleButton = ({ onClick, isShowingMore }) => (
     onClick={onClick}
     className="
       px-3 py-1.5
-      text-slate-300 
-      hover:text-white 
-      text-sm 
-      font-medium 
-      transition-all 
-      duration-300 
+      text-slate-300
+      hover:text-white
+      text-sm
+      font-medium
+      transition-all
+      duration-300
       ease-in-out
-      flex 
-      items-center 
+      flex
+      items-center
       gap-2
-      bg-white/5 
+      bg-white/5
       hover:bg-white/10
       rounded-md
-      border 
+      border
       border-white/10
       hover:border-white/20
       backdrop-blur-sm
@@ -45,7 +45,7 @@ const ToggleButton = ({ onClick, isShowingMore }) => (
     "
   >
     <span className="relative z-10 flex items-center gap-2">
-      {isShowingMore ? "See Less" : "See More"}
+      {isShowingMore ? "Voir moins" : "Voir plus"}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
@@ -152,7 +152,7 @@ export default function FullWidthTabs() {
       }));
 
       const certificateData = certificateSnapshot.docs.map((doc) => doc.data());
-      setProjects(projectData);
+      setProjects([...projectData].reverse());
       setCertificates(certificateData);
 
       // Store in localStorage

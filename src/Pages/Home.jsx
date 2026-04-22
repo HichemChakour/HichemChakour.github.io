@@ -32,7 +32,7 @@ const MainTitle = memo(() => (
       <span className="relative inline-block mt-2">
         <span className="absolute -inset-2 bg-gradient-to-r from-[#6366f1] to-[#a855f7] blur-2xl opacity-20"></span>
         <span className="relative bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent">
-          web
+          React & Symfony
         </span>
       </span>
     </h1>
@@ -77,7 +77,7 @@ const SocialLink = memo(({ icon: Icon, link }) => (
 const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
-const WORDS = ["Étudiant en ingénierie logicielle de la société numérique", "Passionné de technologie"];
+const WORDS = ["Développeur React & Symfony", "Créateur d’applications web modernes"];
 const TECH_STACK = ["React", "Javascript", "Node.js", "PHP"];
 const SOCIAL_LINKS = [
   { icon: Github, link: "https://github.com/HichemChakour" },

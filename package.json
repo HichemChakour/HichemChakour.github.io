@@ -1,14 +1,14 @@
 {
-  "homepage": "https://hichemchakour.github.io/",
+  "homepage": "https://hichemchakour.pro/",
   "name": "portofolio-v5",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
+    "deploy": "firebase deploy --only hosting",
     "lint": "eslint .",
     "preview": "vite preview"
   },

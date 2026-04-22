@@ -53,10 +53,10 @@ const ParkourPage = () => {
             <Header />
 
             {/* Conteneur horizontal */}
-            <div className={`flex xl:flex-row flex-col gap-2 mt-10 justify-center items-center `}>
+            <div className={`flex flex-col gap-2 mt-10 justify-center items-center `}>
                 {parcours.map((step, index) => (
                     <React.Fragment key={step.id}>
-                        <div className="flex xl:flex-row flex-col items-center">
+                        <div className="flex flex-col items-center">
                             <div data-aos="fade-up" data-aos-duration={1300} className="relative group">
                                 <div
                                     className={`
@@ -84,15 +84,15 @@ const ParkourPage = () => {
                                 </div>
                             </div>
 
-                            <ChevronDown className="w-14 h-14 text-gray-400 ml-3 xl:hidden" />
-                            <ChevronRight className="w-14 h-14 text-gray-400 ml-3 hidden xl:block" />
+                            <ChevronDown className="w-14 h-14 text-gray-400 ml-3"/>
+
                         </div>
                     </React.Fragment>
                 ))}
                 <div
                     className="relative z-10 bg-white backdrop-blur-lg rounded-2xl p-6 border border-white/10 overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl w-80 flex flex-col justify-between "
                     data-aos="fade-up"
-                    data-aos-delay={800}
+
                 >
                     <div className="m-12 justify-center items-center ">
                         <h3 className=" text-2xl text-black font-semibold">Votre projet ?</h3>
